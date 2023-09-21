@@ -19,6 +19,10 @@ struct ContentView: View {
                 .tabItem{
                     Label("Other", systemImage: "moon")
             }
+            Countries()
+                .tabItem{
+                    Label("Other", systemImage: "cloud")
+            }
         }
     }
 }
@@ -61,51 +65,6 @@ struct IntroPageView: View {
         }
 }
 
-struct OtherPageView: View {
-    @State private var pressMe = false
-
-    
-    var body: some View{
-        NavigationView {
-            VStack(content:{
-                Text("You're here!")
-                    .padding()
-                Button("MAYBE Press Me?"){
-                    pressMe = true
-                }
-                
-                .sheet(isPresented: $pressMe){
-                    ModalSheet()
-                    
-                }
-            })
-            .padding()
-            .navigationTitle("Other Page")
-        }}
-}
-
-struct NewPageView: View {
-    @State private var alertMe = false
-
-    
-    var body: some View{
-        NavigationView {
-            VStack(content:{
-                Text("Wow, hey there")
-                    .padding()
-                
-                Button("Press Me!"){
-                    alertMe = true
-                }
-                
-                .alert("Wow, now you really made it", isPresented: $alertMe){
-                    Button("Nice", role: .cancel){}
-                }
-            })
-            .padding()
-            .navigationTitle("New Page")
-        }}
-}
 
 struct ModalSheet: View{
     @Environment(\.dismiss) var dismiss
