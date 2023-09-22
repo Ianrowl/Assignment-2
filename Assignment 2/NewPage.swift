@@ -26,6 +26,6 @@ struct NewPageView: View {
                 }
             })
             .padding()
-            .navigationTitle("New Page")
-        }}
+        }            .navigationTitle("New Page")
+}
 }

@@ -21,7 +21,7 @@ struct ContentView: View {
             }
             Countries()
                 .tabItem{
-                    Label("Other", systemImage: "cloud")
+                    Label("Countries", systemImage: "cloud")
             }
         }
     }

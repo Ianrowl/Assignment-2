@@ -11,22 +11,21 @@ struct Country: Codable, Identifiable {
     var id: Int {
         return UUID().hashValue
     }
-    var name: CountryName
+    var name: Name
     var region: String
-    var altSpellings: [String]
-    var flag: String
-    var area: Int
+    var capital: [String]?
+    //    var continents: [String]
+
 }
 
-struct CountryName: Codable {
+
+struct Name: Codable {
     var common: String
-    var nativeName: String
-    var official: String
 }
 
 
 struct Countries: View {
-    @State var countries =  [Country]()
+    @State var countries = [Country]()
     
     func getAllCountries() async -> () {
         do {
@@ -35,22 +34,23 @@ struct Countries: View {
             print(data)
             countries = try JSONDecoder().decode([Country].self, from: data)
         } catch {
-            print("Error: \(error.localizedDescription)")
+            print(String(describing: error))
         }
     }
 
     var body: some View {
-        Text("hello")
         NavigationView {
-            List(countries) {
-                country in
-                VStack {
-                    Text(country.name.common)
-                    Text(country.name.nativeName)
-                    Text(country.name.official)
+            List(countries) { country in
+                VStack(alignment: .leading) {
+                    Text("\(country.name.common) -~- \(country.region) ")
+                    
+//                    Text(country.capital.joined(separator: ", "))
+//                    print(country.capital)
                 }
             }
-            
+            .task {
+                await getAllCountries()
+            }
         }
         .navigationTitle("Countries")
     }
