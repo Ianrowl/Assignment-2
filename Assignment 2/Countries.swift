@@ -26,6 +26,8 @@ struct Name: Codable {
 
 struct Countries: View {
     @State var countries = [Country]()
+    @State private var regionView = false
+
     
     func getAllCountries() async -> () {
         do {
@@ -39,10 +41,22 @@ struct Countries: View {
     }
 
     var body: some View {
+
         NavigationView {
             List(countries) { country in
                 VStack(alignment: .leading) {
-                    Text("\(country.name.common) -~- \(country.region) ")
+                    Text("\(country.name.common)")
+                    
+                    Button("Region?"){
+                        regionView = true
+                    }
+                    .alert(country.region, isPresented: $regionView){
+                        Button("close", role: .cancel){}
+                    }
+//                    
+//                    NavigationLink("A Quote"){
+//                        StrangerView()
+//                    }
                     
 //                    Text(country.capital.joined(separator: ", "))
 //                    print(country.capital)

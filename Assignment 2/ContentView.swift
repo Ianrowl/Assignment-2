@@ -23,6 +23,10 @@ struct ContentView: View {
                 .tabItem{
                     Label("Countries", systemImage: "cloud")
             }
+            StrangerView()
+                .tabItem{
+                    Label("Quotes", systemImage: "bubble")
+            }
         }
     }
 }
