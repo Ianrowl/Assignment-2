@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D709C9C42AD606B600AF22C6 /* PushNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709C9C32AD606B600AF22C6 /* PushNotificationService.swift */; };
 		D73D68032ABCF368009FE69C /* OtherPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D68022ABCF368009FE69C /* OtherPage.swift */; };
-		D73D68052ABCF380009FE69C /* NewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D68042ABCF380009FE69C /* NewPage.swift */; };
-		D73D68072ABCF6C5009FE69C /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D68062ABCF6C5009FE69C /* Countries.swift */; };
-		D7C769952AC66C3B00F53EB0 /* StrangerThings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C769942AC66C3B00F53EB0 /* StrangerThings.swift */; };
+		D73D68072ABCF6C5009FE69C /* CountriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D68062ABCF6C5009FE69C /* CountriesView.swift */; };
+		D758E9CC2AD389F700BB3871 /* IntroPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758E9CB2AD389F700BB3871 /* IntroPageView.swift */; };
+		D758E9CE2AD3917A00BB3871 /* IntroPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758E9CD2AD3917A00BB3871 /* IntroPageViewModel.swift */; };
+		D758E9D02AD3934200BB3871 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758E9CF2AD3934200BB3871 /* ContentViewModel.swift */; };
+		D758E9D22AD393FE00BB3871 /* CountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758E9D12AD393FE00BB3871 /* CountriesViewModel.swift */; };
+		D758E9D72AD3AC6800BB3871 /* StrangerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758E9D62AD3AC6800BB3871 /* StrangerViewModel.swift */; };
+		D794DE322AD8DFE500129045 /* ding-idea-40142.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D794DE312AD8DFE500129045 /* ding-idea-40142.mp3 */; };
+		D7C769952AC66C3B00F53EB0 /* StrangerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C769942AC66C3B00F53EB0 /* StrangerView.swift */; };
 		D7F8AA512AAD620F00582907 /* Assignment_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8AA502AAD620F00582907 /* Assignment_2App.swift */; };
 		D7F8AA532AAD620F00582907 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8AA522AAD620F00582907 /* ContentView.swift */; };
 		D7F8AA552AAD621300582907 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7F8AA542AAD621300582907 /* Assets.xcassets */; };
@@ -38,10 +44,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D709C9C32AD606B600AF22C6 /* PushNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationService.swift; sourceTree = "<group>"; };
 		D73D68022ABCF368009FE69C /* OtherPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherPage.swift; sourceTree = "<group>"; };
-		D73D68042ABCF380009FE69C /* NewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPage.swift; sourceTree = "<group>"; };
-		D73D68062ABCF6C5009FE69C /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
-		D7C769942AC66C3B00F53EB0 /* StrangerThings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrangerThings.swift; sourceTree = "<group>"; };
+		D73D68062ABCF6C5009FE69C /* CountriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesView.swift; sourceTree = "<group>"; };
+		D758E9CB2AD389F700BB3871 /* IntroPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPageView.swift; sourceTree = "<group>"; };
+		D758E9CD2AD3917A00BB3871 /* IntroPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPageViewModel.swift; sourceTree = "<group>"; };
+		D758E9CF2AD3934200BB3871 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		D758E9D12AD393FE00BB3871 /* CountriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewModel.swift; sourceTree = "<group>"; };
+		D758E9D62AD3AC6800BB3871 /* StrangerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrangerViewModel.swift; sourceTree = "<group>"; };
+		D794DE312AD8DFE500129045 /* ding-idea-40142.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "ding-idea-40142.mp3"; path = "../../Sounds/ding-idea-40142.mp3"; sourceTree = "<group>"; };
+		D7C769942AC66C3B00F53EB0 /* StrangerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrangerView.swift; sourceTree = "<group>"; };
 		D7F8AA4D2AAD620F00582907 /* Assignment 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7F8AA502AAD620F00582907 /* Assignment_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_2App.swift; sourceTree = "<group>"; };
 		D7F8AA522AAD620F00582907 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +92,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D758E9D32AD3AC0900BB3871 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				D7F8AA522AAD620F00582907 /* ContentView.swift */,
+				D758E9CF2AD3934200BB3871 /* ContentViewModel.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		D758E9D42AD3AC1D00BB3871 /* IntroPageView */ = {
+			isa = PBXGroup;
+			children = (
+				D758E9CD2AD3917A00BB3871 /* IntroPageViewModel.swift */,
+				D758E9CB2AD389F700BB3871 /* IntroPageView.swift */,
+			);
+			path = IntroPageView;
+			sourceTree = "<group>";
+		};
+		D758E9D52AD3AC3D00BB3871 /* CountriesView */ = {
+			isa = PBXGroup;
+			children = (
+				D758E9D12AD393FE00BB3871 /* CountriesViewModel.swift */,
+				D73D68062ABCF6C5009FE69C /* CountriesView.swift */,
+			);
+			path = CountriesView;
+			sourceTree = "<group>";
+		};
+		D758E9D82AD3AC7F00BB3871 /* StrangerView */ = {
+			isa = PBXGroup;
+			children = (
+				D758E9D62AD3AC6800BB3871 /* StrangerViewModel.swift */,
+				D7C769942AC66C3B00F53EB0 /* StrangerView.swift */,
+			);
+			path = StrangerView;
+			sourceTree = "<group>";
+		};
 		D7F8AA442AAD620F00582907 = {
 			isa = PBXGroup;
 			children = (
@@ -104,11 +152,13 @@
 			isa = PBXGroup;
 			children = (
 				D7F8AA502AAD620F00582907 /* Assignment_2App.swift */,
-				D7F8AA522AAD620F00582907 /* ContentView.swift */,
-				D73D68062ABCF6C5009FE69C /* Countries.swift */,
-				D7C769942AC66C3B00F53EB0 /* StrangerThings.swift */,
+				D758E9D32AD3AC0900BB3871 /* ContentView */,
+				D758E9D42AD3AC1D00BB3871 /* IntroPageView */,
+				D758E9D52AD3AC3D00BB3871 /* CountriesView */,
+				D758E9D82AD3AC7F00BB3871 /* StrangerView */,
 				D73D68022ABCF368009FE69C /* OtherPage.swift */,
-				D73D68042ABCF380009FE69C /* NewPage.swift */,
+				D794DE312AD8DFE500129045 /* ding-idea-40142.mp3 */,
+				D709C9C32AD606B600AF22C6 /* PushNotificationService.swift */,
 				D7F8AA542AAD621300582907 /* Assets.xcassets */,
 				D7F8AA562AAD621300582907 /* Assignment_2.entitlements */,
 				D7F8AA572AAD621300582907 /* Preview Content */,
@@ -247,6 +297,7 @@
 			files = (
 				D7F8AA592AAD621300582907 /* Preview Assets.xcassets in Resources */,
 				D7F8AA552AAD621300582907 /* Assets.xcassets in Resources */,
+				D794DE322AD8DFE500129045 /* ding-idea-40142.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,12 +322,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D709C9C42AD606B600AF22C6 /* PushNotificationService.swift in Sources */,
+				D758E9CE2AD3917A00BB3871 /* IntroPageViewModel.swift in Sources */,
 				D73D68032ABCF368009FE69C /* OtherPage.swift in Sources */,
 				D7F8AA532AAD620F00582907 /* ContentView.swift in Sources */,
-				D7C769952AC66C3B00F53EB0 /* StrangerThings.swift in Sources */,
+				D758E9D72AD3AC6800BB3871 /* StrangerViewModel.swift in Sources */,
+				D758E9D22AD393FE00BB3871 /* CountriesViewModel.swift in Sources */,
+				D7C769952AC66C3B00F53EB0 /* StrangerView.swift in Sources */,
 				D7F8AA512AAD620F00582907 /* Assignment_2App.swift in Sources */,
-				D73D68072ABCF6C5009FE69C /* Countries.swift in Sources */,
-				D73D68052ABCF380009FE69C /* NewPage.swift in Sources */,
+				D758E9D02AD3934200BB3871 /* ContentViewModel.swift in Sources */,
+				D758E9CC2AD389F700BB3871 /* IntroPageView.swift in Sources */,
+				D73D68072ABCF6C5009FE69C /* CountriesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +501,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -483,7 +539,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;

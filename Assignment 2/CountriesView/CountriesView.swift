@@ -1,5 +1,5 @@
 //
-//  Countries.swift
+//  CountriesView.swift
 //  Assignment 2
 //
 //  Created by Ian Rowland on 9/21/23.
@@ -16,7 +16,6 @@ struct Country: Codable, Identifiable {
     var region: String
     var capital: [String]?
     //    var continents: [String]
-
 }
 
 
@@ -30,26 +29,30 @@ struct Countries: View {
     
     var body: some View {
         NavigationView {
-            List(viewModel.countries) { country in
-                VStack(alignment: .leading) {
-                    Text("\(country.name.common)")
-                    
-                    Button("Region?") {
-                        viewModel.selectCountry(country)
-                        showingAlert = true
+                List(viewModel.countries) { country in
+                    VStack(alignment: .leading) {
+                        Text("\(country.name.common)")
+                        
+                        Button("Region?") {
+                            viewModel.selectCountry(country)
+                            showingAlert = true
+                        }
                     }
                 }
+                .alert(isPresented: $showingAlert){
+                    Alert(title: Text(viewModel.selectedCountry?.region ?? ""),dismissButton: .default(Text("Close")))
+                }
+                
+                .task {
+                    await viewModel.getAllCountries()
+                }
             }
-            .alert(isPresented: $showingAlert){
-                Alert(title: Text(viewModel.selectedCountry?.region ?? ""),dismissButton: .default(Text("Close")))
-            }
-//            .alert(isPresented: $showingAlert)) {
-//                Alert(title: Text(viewModel.selectedCountry?.region ?? ""), dismissButton: .default(Text("Close")))
-//            }
-            .task {
-                await viewModel.getAllCountries()
-            }
-        }
-        .navigationTitle("Countries")
+            .navigationTitle("Countries")
+    }
+}
+
+struct Countries_Previews: PreviewProvider {
+    static var previews: some View {
+        Countries(viewModel: CountriesViewModel())
     }
 }

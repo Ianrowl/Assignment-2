@@ -9,7 +9,7 @@ import SwiftUI
 
 struct IntroPageView: View {
     @ObservedObject var viewModel: IntroPageViewModel
-    
+        
     var body: some View {
         NavigationView {
             VStack {
@@ -26,16 +26,22 @@ struct IntroPageView: View {
                     Capsule()
                         .foregroundColor(.teal)
                     Text("Their major is \(viewModel.major)")
-                        .padding()
                     Text("Their graduation year is \(viewModel.year)")
                         .padding()
-                }
-                NavigationLink("Show Me More") {
-                    NewPageView(viewModel: NewPageViewModel())
+                    
+                    Button("Allow Push Notifications"){
+                        PushNotificationService().requestPermissions()
+                    }
                 }
             }
             .padding()
             .navigationTitle("Welcome Page")
         }
+    }
+}
+
+struct Intro_Previews: PreviewProvider {
+    static var previews: some View {
+        IntroPageView(viewModel: IntroPageViewModel())
     }
 }
